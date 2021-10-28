@@ -18,7 +18,6 @@ sh '''
 archiveArtifacts 'target/*.jar'
 }
 }
-}
 stage('Build Image') {
 environment { QUAY = credentials('QUAY_USER') }
 steps {
